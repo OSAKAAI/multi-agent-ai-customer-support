@@ -14,4 +14,4 @@ def process_message(message: str) -> str:
 
     result = graph.invoke(state)
 
-    return result["intent"]
+    return result["response"]

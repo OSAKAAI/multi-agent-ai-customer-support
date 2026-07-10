@@ -9,8 +9,8 @@ router = APIRouter()
 @router.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
 
-    intent = process_message(request.message)
+    response = process_message(request.message)
 
     return ChatResponse(
-        intent=intent
+        response=response
     )

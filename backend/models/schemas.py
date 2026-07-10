@@ -6,4 +6,4 @@ class ChatRequest(BaseModel):
 
 
 class ChatResponse(BaseModel):
-    intent: str
+    response: str
