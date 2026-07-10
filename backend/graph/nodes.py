@@ -21,12 +21,14 @@ def knowledge_node(state: GraphState) -> GraphState:
     Executes the Knowledge Agent.
     """
 
-    response = get_knowledge(state["intent"])
+    response = get_knowledge(
+        intent=state["intent"],
+        message=state["message"]
+    )
 
     state["response"] = response
 
     return state
-
 
 def ticket_node(state: GraphState) -> GraphState:
     """
