@@ -1,16 +1,17 @@
-from agents.intent_agent import detect_intent
+from graph.workflow import graph
 
 
 def process_message(message: str) -> str:
     """
-    Process the user message and return the detected intent.
-
-    Later this function will:
-    - Call LangGraph
-    - Invoke multiple AI agents
-    - Generate the final response
+    Process the user message using the LangGraph workflow.
     """
 
-    intent = detect_intent(message)
+    state = {
+        "message": message,
+        "intent": "",
+        "response": ""
+    }
 
-    return intent
+    result = graph.invoke(state)
+
+    return result["intent"]
