@@ -4,7 +4,7 @@ function IntroVideo() {
   return (
     <section className="w-full bg-black">
       <video
-        className="h-[500px] w-full object-cover"
+        className="h-125 w-full object-cover"
         src={introVideo}
         autoPlay
         muted
