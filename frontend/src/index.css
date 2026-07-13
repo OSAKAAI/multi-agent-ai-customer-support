@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@keyframes aiGlow {
+  0% {
+    box-shadow:
+      0 0 0px rgba(249, 115, 22, 0.15),
+      0 0 8px rgba(249, 115, 22, 0.20);
+    border-color: rgba(249, 115, 22, 0.4);
+  }
+
+  50% {
+    box-shadow:
+      0 0 12px rgba(249, 115, 22, 0.45),
+      0 0 28px rgba(249, 115, 22, 0.20);
+    border-color: rgba(249, 115, 22, 1);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0px rgba(249, 115, 22, 0.15),
+      0 0 8px rgba(249, 115, 22, 0.20);
+    border-color: rgba(249, 115, 22, 0.4);
+  }
+}
+
+.ai-card {
+  animation: aiGlow 2.8s ease-in-out infinite;
+}
