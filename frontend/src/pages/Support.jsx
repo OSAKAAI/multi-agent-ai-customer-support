@@ -1,7 +1,9 @@
+import AIChat from "../components/support/AIChat";
+
 function Support() {
   return (
-    <div>
-      <h1>Support Page</h1>
+    <div className="py-10">
+      <AIChat />
     </div>
   );
 }
