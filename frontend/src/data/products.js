@@ -2,6 +2,30 @@ import laptop1 from "../assets/products/laptops/laptop1.png";
 import laptop2 from "../assets/products/laptops/laptop2.png";
 import laptop3 from "../assets/products/laptops/laptop3.png";
 
+import chair1 from "../assets/products/chairs/chair1.png";
+import chair2 from "../assets/products/chairs/chair2.png";
+import chair3 from "../assets/products/chairs/chair3.png";
+
+import keyboard1 from "../assets/products/keyboards/keyboard1.png";
+import keyboard2 from "../assets/products/keyboards/keyboard2.png";
+import keyboard3 from "../assets/products/keyboards/keyboard3.png";
+
+import mouse1 from "../assets/products/mouse/mouse1.png";
+import mouse2 from "../assets/products/mouse/mouse2.png";
+import mouse3 from "../assets/products/mouse/mouse3.png";
+
+import headset1 from "../assets/products/headsets/headset1.png";
+import headset2 from "../assets/products/headsets/headset2.png";
+import headset3 from "../assets/products/headsets/headset3.png";
+
+import cabinet1 from "../assets/products/cabinets/cabinet1.png";
+import cabinet2 from "../assets/products/cabinets/cabinet2.png";
+import cabinet3 from "../assets/products/cabinets/cabinet3.png";
+
+import mousepad1 from "../assets/products/mousepads/mousepad1.png";
+import mousepad2 from "../assets/products/mousepads/mousepad2.png";
+import mousepad3 from "../assets/products/mousepads/mousepad3.png";
+
 export const products = [
   {
     id: 1,
@@ -65,5 +89,670 @@ export const products = [
   inStock: true,
 
   rating: 5.0,
-}
+},
+
+{
+  id: 4,
+  category: "gaming-chairs",
+  slug: "axiom-apex-pro",
+  name: "AXIOM Apex Pro",
+  price: 24999,
+  image: chair1,
+
+  shortDescription: "Flagship Ergonomic Gaming Chair",
+
+  specifications: {
+    upholstery: "Premium PU Leather",
+    frame: "Steel Reinforced",
+    armrests: "4D Adjustable",
+    recline: "90° - 180°",
+    base: "Aluminum Alloy",
+    weightCapacity: "180 kg"
+  },
+
+  features: [
+    "4D Adjustable Armrests",
+    "180° Reclining Backrest",
+    "Memory Foam Lumbar Support",
+    "Magnetic Head Pillow",
+    "Premium Cold-Cure Foam",
+    "Heavy-Duty Aluminum Base",
+    "Silent PU Casters",
+    "Class-4 Gas Lift"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 5,
+  category: "gaming-chairs",
+  slug: "axiom-strike-x",
+  name: "AXIOM Strike X",
+  price: 19999,
+  image: chair2,
+
+  shortDescription: "Performance Gaming Chair",
+
+  specifications: {
+    upholstery: "Premium PU Leather",
+    frame: "Steel",
+    armrests: "3D Adjustable",
+    recline: "90° - 165°",
+    base: "Steel Base",
+    weightCapacity: "150 kg"
+  },
+
+  features: [
+    "3D Adjustable Armrests",
+    "High-Density Foam",
+    "Adjustable Lumbar Cushion",
+    "Removable Neck Pillow",
+    "Smooth PU Wheels",
+    "Butterfly Tilt Mechanism",
+    "Steel Frame",
+    "Class-4 Gas Lift"
+  ],
+
+  warranty: "2 Years",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 6,
+  category: "gaming-chairs",
+  slug: "axiom-frost-throne",
+  name: "AXIOM Frost Throne",
+  price: 29999,
+  image: chair3,
+
+  shortDescription: "White Edition Premium Gaming Chair",
+
+  specifications: {
+    upholstery: "Premium White PU Leather",
+    frame: "Steel Reinforced",
+    armrests: "4D Adjustable",
+    recline: "90° - 180°",
+    base: "Aluminum Alloy",
+    weightCapacity: "180 kg"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "4D Adjustable Armrests",
+    "Cooling Memory Foam",
+    "Premium Lumbar Support",
+    "180° Reclining",
+    "Heavy-Duty Aluminum Base",
+    "Silent Premium Wheels",
+    "Class-4 Gas Lift"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 5.0,
+},
+
+{
+  id: 7,
+  category: "gaming-keyboards",
+  slug: "axiom-nova-tkl",
+  name: "AXIOM Nova TKL",
+  price: 6999,
+  image: keyboard1,
+
+  shortDescription: "Tournament Edition Mechanical Keyboard",
+
+  specifications: {
+    layout: "TKL (87 Keys)",
+    switches: "AXIOM Red Mechanical",
+    lighting: "Per-Key RGB",
+    connectivity: "USB-C Wired",
+    pollingRate: "1000Hz",
+    keycaps: "Double-Shot PBT"
+  },
+
+  features: [
+    "Tournament TKL Layout",
+    "Hot-Swappable Switches",
+    "Per-Key RGB Lighting",
+    "Double-Shot PBT Keycaps",
+    "N-Key Rollover",
+    "Anti-Ghosting",
+    "Detachable USB-C Cable",
+    "Gaming Software Support"
+  ],
+
+  warranty: "2 Years",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 8,
+  category: "gaming-keyboards",
+  slug: "axiom-inferno-pro",
+  name: "AXIOM Inferno Pro",
+  price: 9999,
+  image: keyboard2,
+
+  shortDescription: "Flagship RGB Mechanical Keyboard",
+
+  specifications: {
+    layout: "Full Size (104 Keys)",
+    switches: "AXIOM Optical Mechanical",
+    lighting: "Dynamic RGB",
+    connectivity: "USB-C Wired",
+    pollingRate: "8000Hz",
+    keycaps: "Double-Shot PBT"
+  },
+
+  features: [
+    "Optical Mechanical Switches",
+    "8000Hz Polling Rate",
+    "Per-Key RGB Effects",
+    "Dedicated Media Controls",
+    "Aluminum Top Plate",
+    "Hot-Swappable PCB",
+    "Macro Recording",
+    "Premium Wrist Rest Support"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 9,
+  category: "gaming-keyboards",
+  slug: "axiom-frost-elite",
+  name: "AXIOM Frost Elite",
+  price: 11999,
+  image: keyboard3,
+
+  shortDescription: "White Edition Premium Mechanical Keyboard",
+
+  specifications: {
+    layout: "Full Size (104 Keys)",
+    switches: "AXIOM Silent Optical",
+    lighting: "RGB Edge Lighting",
+    connectivity: "USB-C Wired",
+    pollingRate: "8000Hz",
+    keycaps: "Premium PBT White"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "Silent Optical Switches",
+    "RGB Edge Lighting",
+    "Premium White PBT Keycaps",
+    "Hot-Swappable Switches",
+    "Aluminum Chassis",
+    "Dedicated Gaming Mode",
+    "Ultra-Low Latency"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 5.0,
+},
+
+{
+  id: 10,
+  category: "gaming-mouse",
+  slug: "axiom-pulse-m5",
+  name: "AXIOM Pulse M5",
+  price: 3499,
+  image: mouse1,
+
+  shortDescription: "Ultra-Light Gaming Mouse",
+
+  specifications: {
+    sensor: "PixArt PAW3395",
+    dpi: "26000 DPI",
+    buttons: "6 Programmable",
+    pollingRate: "1000Hz",
+    weight: "58g",
+    connectivity: "USB Wired"
+  },
+
+  features: [
+    "Ultra-Light 58g Design",
+    "PixArt 3395 Sensor",
+    "1000Hz Polling Rate",
+    "RGB Edge Lighting",
+    "PTFE Mouse Feet",
+    "Onboard Memory",
+    "Programmable Buttons",
+    "Braided Cable"
+  ],
+
+  warranty: "2 Years",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 11,
+  category: "gaming-mouse",
+  slug: "axiom-phantom-x8",
+  name: "AXIOM Phantom X8",
+  price: 5999,
+  image: mouse2,
+
+  shortDescription: "Flagship RGB Gaming Mouse",
+
+  specifications: {
+    sensor: "PixArt PAW3950",
+    dpi: "32000 DPI",
+    buttons: "8 Programmable",
+    pollingRate: "8000Hz",
+    weight: "54g",
+    connectivity: "USB Wired"
+  },
+
+  features: [
+    "Flagship PixArt 3950 Sensor",
+    "8000Hz Polling Rate",
+    "54g Ultra-Light Design",
+    "Advanced RGB Zones",
+    "Optical Switches",
+    "Onboard Profiles",
+    "PTFE Skates",
+    "Tournament Performance"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 12,
+  category: "gaming-mouse",
+  slug: "axiom-frost-m7",
+  name: "AXIOM Frost M7",
+  price: 6999,
+  image: mouse3,
+
+  shortDescription: "White Edition Premium Gaming Mouse",
+
+  specifications: {
+    sensor: "PixArt PAW3950",
+    dpi: "32000 DPI",
+    buttons: "8 Programmable",
+    pollingRate: "8000Hz",
+    weight: "56g",
+    connectivity: "USB Wired"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "Premium White Finish",
+    "PixArt 3950 Sensor",
+    "8000Hz Polling Rate",
+    "Optical Switches",
+    "RGB Lighting",
+    "Tournament Grade Cable",
+    "Professional Gaming Mode"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 5.0,
+},
+
+{
+  id: 13,
+  category: "gaming-headsets",
+  slug: "axiom-echo-h5",
+  name: "AXIOM Echo H5",
+  price: 4999,
+  image: headset1,
+
+  shortDescription: "Wired RGB Gaming Headset",
+
+  specifications: {
+    drivers: "50mm Neodymium",
+    microphone: "Detachable Noise-Cancelling",
+    connectivity: "3.5mm + USB",
+    surroundSound: "7.1 Virtual Surround",
+    frequencyResponse: "20Hz - 20kHz",
+    weight: "310g"
+  },
+
+  features: [
+    "50mm Premium Drivers",
+    "Virtual 7.1 Surround Sound",
+    "RGB Earcup Lighting",
+    "Detachable Noise-Cancelling Microphone",
+    "Memory Foam Ear Cushions",
+    "Adjustable Headband",
+    "Inline Audio Controls",
+    "Multi-Platform Compatibility"
+  ],
+
+  warranty: "2 Years",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 14,
+  category: "gaming-headsets",
+  slug: "axiom-nova-wireless",
+  name: "AXIOM Nova Wireless",
+  price: 8999,
+  image: headset2,
+
+  shortDescription: "Wireless RGB Gaming Headset",
+
+  specifications: {
+    drivers: "50mm Titanium",
+    microphone: "AI Noise Reduction",
+    connectivity: "2.4GHz Wireless + Bluetooth",
+    battery: "40 Hours",
+    surroundSound: "7.1 Virtual Surround",
+    weight: "295g"
+  },
+
+  features: [
+    "Dual Wireless Connectivity",
+    "40-Hour Battery Life",
+    "AI Noise-Cancelling Microphone",
+    "Premium 50mm Titanium Drivers",
+    "Low Latency Gaming Mode",
+    "Memory Foam Ear Cushions",
+    "USB-C Fast Charging",
+    "RGB Lighting"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 15,
+  category: "gaming-headsets",
+  slug: "axiom-frost-aura",
+  name: "AXIOM Frost Aura",
+  price: 10999,
+  image: headset3,
+
+  shortDescription: "White Edition Premium Wireless Headset",
+
+  specifications: {
+    drivers: "53mm Titanium",
+    microphone: "AI ENC Microphone",
+    connectivity: "2.4GHz Wireless + Bluetooth",
+    battery: "50 Hours",
+    surroundSound: "7.1 Virtual Surround",
+    weight: "290g"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "53mm Titanium Drivers",
+    "50-Hour Battery",
+    "AI ENC Microphone",
+    "USB-C Fast Charging",
+    "Premium Memory Foam",
+    "Ultra-Low Latency Wireless",
+    "RGB Accent Lighting"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 5.0,
+},
+
+{
+  id: 16,
+  category: "pc-cabinets",
+  slug: "axiom-core-c500",
+  name: "AXIOM Core C500",
+  price: 6999,
+  image: cabinet1,
+
+  shortDescription: "High-Airflow Mid Tower Gaming Cabinet",
+
+  specifications: {
+    formFactor: "ATX Mid Tower",
+    motherboardSupport: "ATX / Micro-ATX / Mini-ITX",
+    sidePanel: "Tempered Glass",
+    coolingSupport: "Up to 6 x 120mm Fans",
+    radiatorSupport: "360mm Front / Top",
+    gpuClearance: "380mm"
+  },
+
+  features: [
+    "High Airflow Mesh Front",
+    "Tempered Glass Side Panel",
+    "ARGB Fan Support",
+    "Tool-Free Side Panel",
+    "Cable Management System",
+    "Dust Filters",
+    "360mm Radiator Support",
+    "PSU Shroud"
+  ],
+
+  warranty: "2 Years",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 17,
+  category: "pc-cabinets",
+  slug: "axiom-titan-c700",
+  name: "AXIOM Titan C700",
+  price: 9999,
+  image: cabinet2,
+
+  shortDescription: "Premium RGB Full Tower Cabinet",
+
+  specifications: {
+    formFactor: "ATX Full Tower",
+    motherboardSupport: "E-ATX / ATX / Micro-ATX",
+    sidePanel: "Tempered Glass",
+    coolingSupport: "Up to 10 Fans",
+    radiatorSupport: "420mm",
+    gpuClearance: "430mm"
+  },
+
+  features: [
+    "Premium Steel Construction",
+    "Panoramic Tempered Glass",
+    "ARGB Lighting",
+    "Vertical GPU Support",
+    "420mm Radiator Support",
+    "USB Type-C Front I/O",
+    "Advanced Cable Routing",
+    "Magnetic Dust Filters"
+  ],
+
+  warranty: "3 Years",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 18,
+  category: "pc-cabinets",
+  slug: "axiom-frost-c800",
+  name: "AXIOM Frost C800",
+  price: 11999,
+  image: cabinet3,
+
+  shortDescription: "White Edition Premium Gaming Cabinet",
+
+  specifications: {
+    formFactor: "ATX Full Tower",
+    motherboardSupport: "E-ATX / ATX / Micro-ATX",
+    sidePanel: "Tempered Glass",
+    coolingSupport: "10 x 120mm Fans",
+    radiatorSupport: "420mm",
+    gpuClearance: "430mm"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "Dual Tempered Glass Panels",
+    "Premium White Finish",
+    "ARGB Lighting",
+    "420mm Radiator Support",
+    "USB Type-C",
+    "Vertical GPU Mount",
+    "Premium Cable Management"
+  ],
+
+  warranty: "3 Years Premium Warranty",
+
+  inStock: true,
+
+  rating: 5.0,
+},
+{
+  id: 19,
+  category: "mouse-pads",
+  slug: "axiom-prism-mp800",
+  name: "AXIOM Prism MP800",
+  price: 2999,
+  image: mousepad1,
+
+  shortDescription: "Premium RGB Extended Gaming Mouse Pad",
+
+  specifications: {
+    size: "900 x 400 x 4 mm",
+    surface: "Micro-Textured Speed Surface",
+    base: "Anti-Slip Rubber",
+    lighting: "RGB Edge Lighting",
+    connection: "USB Powered",
+    material: "Premium Fabric"
+  },
+
+  features: [
+    "RGB Edge Lighting",
+    "Ultra Smooth Surface",
+    "Anti-Slip Rubber Base",
+    "Water Resistant",
+    "Stitched Edges",
+    "Large Extended Size",
+    "Plug & Play",
+    "Optimized for Optical Sensors"
+  ],
+
+  warranty: "1 Year",
+
+  inStock: true,
+
+  rating: 4.8,
+},
+
+{
+  id: 20,
+  category: "mouse-pads",
+  slug: "axiom-strike-mp700",
+  name: "AXIOM Strike MP700",
+  price: 1999,
+  image: mousepad2,
+
+  shortDescription: "Professional Speed Gaming Mouse Pad",
+
+  specifications: {
+    size: "900 x 400 x 4 mm",
+    surface: "Control-Speed Hybrid",
+    base: "Anti-Slip Rubber",
+    lighting: "No RGB",
+    connection: "None",
+    material: "Premium Cloth"
+  },
+
+  features: [
+    "Speed Optimized Surface",
+    "Precision Tracking",
+    "Anti-Fray Stitched Edges",
+    "Water Resistant",
+    "Anti-Slip Rubber Base",
+    "Extended Desk Size",
+    "Easy to Clean",
+    "Tournament Ready"
+  ],
+
+  warranty: "1 Year",
+
+  inStock: true,
+
+  rating: 4.9,
+},
+
+{
+  id: 21,
+  category: "mouse-pads",
+  slug: "axiom-frost-mp900",
+  name: "AXIOM Frost MP900",
+  price: 3499,
+  image: mousepad3,
+
+  shortDescription: "White Edition RGB Premium Mouse Pad",
+
+  specifications: {
+    size: "900 x 400 x 4 mm",
+    surface: "Premium Micro-Texture",
+    base: "Anti-Slip Rubber",
+    lighting: "RGB Edge Lighting",
+    connection: "USB Powered",
+    material: "Premium Cloth"
+  },
+
+  features: [
+    "Exclusive Frost Edition",
+    "RGB Edge Lighting",
+    "Smooth Precision Surface",
+    "Water Resistant",
+    "Premium Stitching",
+    "Anti-Slip Base",
+    "Large Extended Design",
+    "Premium Build Quality"
+  ],
+
+  warranty: "1 Year",
+
+  inStock: true,
+
+  rating: 5.0,
+},
 ];

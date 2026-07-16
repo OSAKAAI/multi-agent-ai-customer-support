@@ -1,42 +1,54 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "../components/layout/Layout";
+import ScrollToTop from "../components/layout/ScrollToTop";
 
 import Home from "../pages/Home";
 import Products from "../pages/Products";
-import CategoryProducts from "../pages/CategoryProducts"; // NEW
+import CategoryProducts from "../pages/CategoryProducts";
+import ProductDetails from "../pages/ProductDetails";
+import SearchResults from "../components/SearchResults";
 import About from "../pages/About";
 import Support from "../pages/Support";
 import Contact from "../pages/Contact";
-import ScrollToTop from "../components/layout/ScrollToTop";
-import ProductDetails from "../pages/ProductDetails";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
+
       <Routes>
         <Route element={<Layout />}>
+
+          {/* Home */}
           <Route path="/" element={<Home />} />
 
-          {/* Products */}
+          {/* Products Landing Page */}
           <Route path="/products" element={<Products />} />
 
-          {/* Dynamic Category Route */}
+          {/* Search Results */}
           <Route
-  path="/products/:categorySlug"
-  element={<CategoryProducts />}
-/>
+            path="/products/search"
+            element={<SearchResults />}
+          />
 
-<Route
-  path="/products/:categorySlug/:productSlug"
-  element={<ProductDetails />}
-/>
+          {/* Category */}
+          <Route
+            path="/products/:categorySlug"
+            element={<CategoryProducts />}
+          />
+
+          {/* Product Details */}
+          <Route
+            path="/products/:categorySlug/:productSlug"
+            element={<ProductDetails />}
+          />
 
           {/* Other Pages */}
           <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

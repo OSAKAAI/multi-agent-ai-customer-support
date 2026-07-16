@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { products } from "../data/products";
 import ProductCard from "../components/products/ProductCard";
 
+
+
 function CategoryProducts() {
   const { categorySlug } = useParams();
 
