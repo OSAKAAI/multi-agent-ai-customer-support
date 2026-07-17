@@ -10,7 +10,7 @@ function MessageBubble({ message }) {
             : "bg-gray-100 text-gray-800 rounded-bl-md"
         }`}
       >
-        <p className="whitespace-pre-wrap break-words">
+        <p className="whitespace-pre-wrap wrap-break-words">
           {message.text}
         </p>
       </div>
