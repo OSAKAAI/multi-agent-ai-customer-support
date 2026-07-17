@@ -1,11 +1,7 @@
-import AIChat from "../components/support/AIChat";
+import AIExperience from "../components/support/AIExperience";
 
 function Support() {
-  return (
-    <div className="py-10">
-      <AIChat />
-    </div>
-  );
+  return <AIExperience />;
 }
 
 export default Support;
