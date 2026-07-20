@@ -13,7 +13,7 @@ function ChatWindow({ messages, loading }) {
   }, [messages, loading]);
 
   return (
-    <div className="h-[450px] overflow-y-auto bg-white p-6">
+    <div className="h-112.5 overflow-y-auto bg-white p-6">
       <div className="space-y-6">
         {messages.map((message, index) => {
           const recommendedProducts =
