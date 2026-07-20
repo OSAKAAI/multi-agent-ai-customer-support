@@ -9,7 +9,9 @@ function AIExperience() {
   const [messages, setMessages] = useState([
     {
       sender: "ai",
-      text: "👋 Welcome to AXIOM Support!\n\nI'm here to help with:\n\n• 🎮 Product recommendations\n• 📦 Order tracking\n• 🛠 Technical support\n• 🔄 Warranty & returns\n\nHow can I help you today?",
+      text:
+        "👋 Welcome to AXIOM Support!\n\nI'm here to help with:\n\n• 🎮 Product recommendations\n• 📦 Order tracking\n• 🛠 Technical support\n• 🔄 Warranty & returns\n\nHow can I help you today?",
+      products: [],
     },
   ]);
 
@@ -21,7 +23,6 @@ function AIExperience() {
 
     if (!message || loading) return;
 
-    // Add user message
     setMessages((prev) => [
       ...prev,
       {
@@ -40,7 +41,8 @@ function AIExperience() {
         ...prev,
         {
           sender: "ai",
-          text: reply,
+          text: reply.message,
+          products: reply.products || [],
         },
       ]);
     } catch (error) {
@@ -51,6 +53,7 @@ function AIExperience() {
         {
           sender: "ai",
           text: "⚠️ Sorry, I couldn't connect to the AI server. Please try again.",
+          products: [],
         },
       ]);
     } finally {
@@ -61,7 +64,6 @@ function AIExperience() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-xl">
-
         <HeroSection />
 
         <SuggestionChips onSelect={handleSend} />
@@ -77,7 +79,6 @@ function AIExperience() {
           handleSend={handleSend}
           loading={loading}
         />
-
       </div>
     </div>
   );

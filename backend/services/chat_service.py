@@ -1,17 +1,18 @@
 from graph.workflow import graph
 
 
-def process_message(message: str) -> str:
+def process_message(message: str):
     """
-    Process the user message using the LangGraph workflow.
+    Process a user message using the LangGraph workflow.
     """
 
     state = {
         "message": message,
         "intent": "",
-        "response": ""
+        "response": "",
+        "products": [],
     }
 
     result = graph.invoke(state)
 
-    return result["response"]
+    return result

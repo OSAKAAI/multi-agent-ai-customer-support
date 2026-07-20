@@ -1,22 +1,31 @@
 import os
 
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    google_api_key=os.getenv("GOOGLE_API_KEY"),
-    temperature=0
+
+llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    groq_api_key=os.getenv("GROQ_API_KEY"),
+    temperature=0,
 )
 
 
 def ask_llm(prompt: str) -> str:
     """
-    Sends a prompt to Gemini and returns the response text.
+    Sends a prompt to the configured LLM and returns the response.
     """
 
-    response = llm.invoke(prompt)
+    try:
+        response = llm.invoke(prompt)
+        return response.content
 
-    return response.content
+    except Exception as e:
+        print(f"Groq Error: {e}")
+
+        return (
+            "I'm sorry, the AI service is temporarily unavailable. "
+            "Please try again later."
+        )

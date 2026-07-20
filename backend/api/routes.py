@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from models.schemas import ChatRequest, ChatResponse
+from models.schemas import ChatRequest, ChatResponse, ProductResponse
 from services.chat_service import process_message
 
 router = APIRouter()
@@ -9,8 +9,12 @@ router = APIRouter()
 @router.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
 
-    response = process_message(request.message)
+    result = process_message(request.message)
 
     return ChatResponse(
-        response=response
+        message=result["response"],
+        products=[
+            ProductResponse(slug=product["slug"])
+            for product in result["products"]
+        ]
     )

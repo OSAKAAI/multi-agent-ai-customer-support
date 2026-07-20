@@ -6,7 +6,10 @@ export const sendMessage = async (message) => {
       message,
     });
 
-    return data.response;
+    return {
+      message: data.message,
+      products: data.products,
+    };
   } catch (error) {
     console.error("Chat Service Error:", error);
     throw error;

@@ -1,12 +1,14 @@
 from graph.state import GraphState
+
 from agents.intent_agent import detect_intent
 from agents.knowledge_agent import get_knowledge
 from agents.ticket_agent import create_ticket
+from agents.product_agent import search_products
 
 
 def intent_node(state: GraphState) -> GraphState:
     """
-    LangGraph node responsible for intent detection.
+    Detects the user's intent.
     """
 
     intent = detect_intent(state["message"])
@@ -19,16 +21,23 @@ def intent_node(state: GraphState) -> GraphState:
 def knowledge_node(state: GraphState) -> GraphState:
     """
     Executes the Knowledge Agent.
+    Searches products before querying Gemini.
     """
+
+    products = search_products(state["message"])
+
+    state["products"] = products
 
     response = get_knowledge(
         intent=state["intent"],
-        message=state["message"]
+        message=state["message"],
+        products=products,
     )
 
     state["response"] = response
 
     return state
+
 
 def ticket_node(state: GraphState) -> GraphState:
     """
@@ -40,4 +49,3 @@ def ticket_node(state: GraphState) -> GraphState:
     state["response"] = response
 
     return state
-
