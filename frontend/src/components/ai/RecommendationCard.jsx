@@ -7,7 +7,7 @@ function RecommendationCard({ product }) {
       className="group flex items-center gap-4 rounded-2xl border border-gray-200 bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-orange-500 hover:shadow-lg"
     >
       {/* Product Image */}
-      <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-xl bg-black">
+      <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-black">
         <img
           src={product.image}
           alt={product.name}
